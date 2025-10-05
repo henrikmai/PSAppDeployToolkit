@@ -44,7 +44,7 @@
         "Azure Cloud Shell (Bash)":null
     },
     "terminal.integrated.defaultProfile.windows":"PowerShell PSADT",
-    "files.autoGuessEncoding": true,
-    "files.encoding": "utf8bom",
-    "files.insertFinalNewline": true,
+    "files.defaultLanguage": "powershell",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never"
 }
