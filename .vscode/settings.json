@@ -7,6 +7,39 @@
     "editor.tabSize": 4,
 
     //-------- Files configuration --------
+    "files.exclude": {
+        ".editorconfig": true,
+        ".gitattributes":true,
+        ".gitignore":true,
+        ".github": true,
+        "**/Deploy-Application.exe":true,
+        "**/Deploy-Application.exe.config":true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "COPYING.Lesser":true
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell PSADT": {
+            "path": "C:\\windows\\system32\\WindowsPowershell\\v1.0\\powershell.exe",
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": [
+                "-NoLogo",
+                "-NoExit",
+                "-ExecutionPolicy",
+                "RemoteSigned",
+                "Import-Module oh-my-posh;Set-Theme qwerty"
+            ]
+        },
+        "Git Bash":null,
+        "Command Prompt":null,
+        "JavaScript Debug Terminal":null,
+        "Azure Cloud Shell (Bash)":null
+    },
+    "terminal.integrated.defaultProfile.windows":"PowerShell PSADT",
     "files.autoGuessEncoding": true,
     "files.encoding": "utf8bom",
     "files.insertFinalNewline": true,
